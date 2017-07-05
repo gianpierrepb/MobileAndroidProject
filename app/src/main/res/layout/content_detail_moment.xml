@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.juma.moments.activities.DetailMomentActivity"
+    tools:showIn="@layout/activity_detail_moment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:id="@+id/detailMomentCardView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pictureImageMomentView"
+            android:layout_width="260dp"
+            android:layout_height="93dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/dog" />
+        <TextView
+                android:id="@+id/titleMomentDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Title Moment"/>
+
+            <TextView
+                android:id="@+id/locationMomentDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Location Moment"
+                android:textColor="@color/colorSecondaryText" />
+
+            <TextView
+                android:id="@+id/descriptionMomentDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Description Moment"
+                android:textColor="@color/colorSecondaryText" />
+
+            <TextView
+                android:id="@+id/createdMomentDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Created Moment"
+                android:textColor="@color/colorSecondaryText" />
+
+            <TextView
+                android:id="@+id/updateMomentDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Update Moment"
+                android:textColor="@color/colorSecondaryText"/>
+
+            <TextView
+                android:id="@+id/durationMomentDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Duration Moment"
+                android:textColor="@color/colorSecondaryText" />
+
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
